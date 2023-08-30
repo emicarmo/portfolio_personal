@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="css/estilo-portfolio.css">
+        <title>CECM Portfolio</title>
+    </head> 
+    <body>
+        <!-- Seccion de inicio -->
+        <section id="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="contenido-header">
+                        <h1>/CECM/</h1>
+                        <nav id="nav" class="">
+                            <ul id="links">
+                                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                                <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                                <li><a href="#educacion" onclick="seleccionar(this)">Educacion</a></li>
+                                <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                                <li><a href="#contacto" onclick="seleccionar(this)" >Contacto</a></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Iconos del menu -->
+                        <div id="icono-nav" onclick="responsiveMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <!-- Icono redes sociales -->
+                        <div class="iconos-redes">
+                            <a href="https://www.facebook.com/chris.caruso.12" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/christian-emiliano-caruso-montesano-2b0312219/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/chris_93_caruso/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Bienvenidos a mi sitio web</p>
+                    <h2>Soy <span>Christian Emilano Caruso Montesano</span>, Desarrollador Web Trainee</h2>
+                    <p class="descripcion">En esta pagina encontras todo acerca de mi, los proyectos que fui realizando, los cursos, y como contactarme.</p>
+                    <a href="#portfolio">Ir a Portafolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion sobre mi -->
+        <section id="sobremi">
+            <div class="contenedor-foto"> 
+                <img src="images/20220606_102358.jpg" alt="">
+            </div>
+            <div class="sobremi">
+                <h3 class="titulo-seccion">Sobre mi</h3>
+                <h2>Hola, soy <span>Christian Emiliano Caruso Montesano</span></h2>
+                <h3>Desarrollador Web</h3>
+                <p>Empecé a estudiar programación en el 2021 en el Instituto Educación IT. Me anote en la carrera <strong>Python Web Developer</strong> que contiene estos <a id="link-cursos" href="#cursos">CURSOS</a>. En agosto del pasado año termine lo que seria el ultimo curso de la carrera que es Desarrollo Web Python & Django. También cuento con conocimientos en HTML, CSS, JavaScript, SASS, LEES.</p>
+                <p>Me gusta los desafíos, siempre quedan muchas cosas por aprender en este rubro, porque el conocimiento es infinito y siempre seguir capacitandote. Tengo otros estudios tambien distintos al area de programacion o desarrollador, capacidad de resolución de conflictos y velocidad de aprendisazaje. Fomento del trabajo en equipo, compañerismo, organizado, gran capacidad de multitarea. <strong>Estoy buscando mi primera experiencia en el area IT, espero poder conseguirlo y seguir creciendo dia a dia</strong>.</p>
+                <div class="btn-cv">
+                    <a href="files/pdf/Christian Caruso CV.pdf" download="Christian Caruso CV.pdf">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion educacion -->
+        <section id="educacion">
+            <h3 class="titulo-seccion">Aptitudes</h3>
+            <p class="parrafo-seccion">Estas son las tecnologias de las que tengo conocimiento.</p>
+            <div class="contenedor-imagenes">
+                <img src="images/logo- visual.png" alt="logo-visual" class="logos">
+                <img src="images/logo-html.png" alt="logo-html" class="logos">
+                <img src="images/logo-css.png" alt="logo-css" class="logos">
+                <img src="images/SASS.png" alt="logo-sass" class="logos">
+                <img src="images/LESS.png" alt="logo-less" class="logos">
+                <img src="images/logo-js.png" alt="logo-js" class="logos">
+                <img src="images/Jquery.png" alt="logo-jquery" class="logos">
+                <img src="images/logo-python.png" alt="logo-python" class="logos">
+                <img src="images/logo-mysql.png" alt="logo-sql" class="logos">
+                <img src="images/logo-git.png" alt="logo-git" class="logos">
+                <img src="images/logo-django.png" alt="logo-django" class="logos">
+            </div>
+            <div class="contenedor-cursos">
+                <h3 id="cursos" class="titulo-div">Cursos realizados</h3>
+                <ul>
+                    <li>Curso de Desarrollo Web con HTML</li>
+                    <li>Curso de Maquetación Web: HTML5, CSS, SASS, LESS</li> 
+                    <li>Curso de JavaScript</li> 
+                    <li>Curso de JavaScript Avanzado</li>
+                    <li>Curso de Python inicial</li>
+                    <li>Curso de Python Programming</li>
+                    <li>Curso de Introducción a Base de Datos y SQL</li>
+                    <li>Curso de Introducción al Paradigma de Objetos</li>
+                    <li>Curso de Git</li>
+                    <li>Curso de Desarrollo Web en Python & Django</li>
+                </ul>
+            </div>
+            <div class="btn-certificados">
+                <a href="https://www.educacionit.com/perfil/christian%20emiliano-caruso%20montesano-674324" target="_blank">Ver certificados</a>
+            </div>
+        </section>
+
+        <!-- Seccion portafolio -->
+        <section id="portfolio">
+            <h3 class="titulo-seccion">Ejercicios</h3>
+            <div class="fila">
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto1.png" alt="proyecto1">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseño Web</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/PaginaWeb" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/PaginaWeb/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto3.png" alt="proyecto3">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseño Web</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/PaginaWeb2" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/PaginaWeb2/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/poke api.png" alt="Proyecto4">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #LESS #JS #FETCH</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>PokeApi</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/PokeApi" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/PokeApi/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/proyecto 7.png" alt="Proyecto7">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #JS #AJAX</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Ejemplo Single page application (SPA)</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/SPA" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/SPA/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h3 class="titulo-seccion">PROYECTOS</h3>
+            <div class="fila">
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Pagina responsive.png" alt="proyectoresponsive">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #SASS #BOOTSTRAP #JS</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Interfaz Web Responsive</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/Dise-oWebResponsive" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/Dise-oWebResponsive/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto4.png" alt="proyecto4">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #JS</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Aplicacion de procesamiento de energia</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/procesamiento-madera" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/procesamiento-madera/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto 8.png" alt="proyecto4">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #LESS #JS #FETCH</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>E-Commerce</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/ComerceChris" target="_blank">Ver codigo</a>
+                            <a href="https://emicarmo.github.io/ComerceChris/index.html" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto5.png" alt="proyecto5">
+                    <div class="info">
+                        <p class="lenguaje">#HTML #CSS #JS #SQL #PYTHON #DJANGO</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Admin de Clientes</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/Admin_clientes" target="_blank">Ver codigo</a>
+                            <a href="https://chris9373.pythonanywhere.com/" target="_blank">Ver pagina</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div id="overplay"></div>
+                    <img src="images/Proyecto6.png" alt="proyecto4">
+                    <div class="info">
+                        <p class="lenguaje">#PYTHON #TK #SQLITE3</p>
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Aplicaciones de escritorio</p>
+                        <div class="link-ver-codigo">
+                            <a href="https://github.com/emicarmo/PythonAplicaciones" target="_blank">Ver codigo</a>
+                            <a href="files/apps/aplicaciones-tkinter.rar" download="aplicaciones-tkinter.rar">Descargar apps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto -->
+        <section id="contacto">
+            <h3 class="titulo-seccion">Contactame ahora</h3>
+            <div class="contenedor-form">
+                <form action="https://formsubmit.co/711fe1f8afc3eceb844a21c618ea7aa3" method="post">
+                    <input type="hidden" name="_next" value="https://emicarmo.github.io/miportfolio-personal/thanks.html">
+                    <div class="fila mitad">
+                        <input type="text" placeholder="Nombre Completo" name="name" class="input-mitad">
+                        <input type="text" placeholder="Direccion de Email" name="email" class="input-mitad">
+                    </div>
+                    <div class="fila">
+                        <input type="text" name="theme" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                        <textarea name="info" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                    <div class="contacto-form-loader">
+                        <img id="loader" src="images/loader2.gif" alt="cargando">
+                    </div>
+                    <div class="contacto-form-respuesta">
+                        <p id="respuesta">
+                            Enviando datos...
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Seccion Footer -->
+        <footer>
+            <p>&copy; Copyright 2023</p>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/chris.caruso.12" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/christian-emiliano-caruso-montesano-2b0312219/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/chris_93_caruso/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>    
+        </footer>
+        
+        <!-- Archivo -->
+        <script src="js/script.js"></script>
+    </body>
+    </html>
