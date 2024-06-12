@@ -256,9 +256,10 @@ html{
 }
 
 #educacion .contenedor-imagenes .logos{
-    width: 80px;
+    width: 90px;
     height: 80px;
     margin: 20px;
+    object-fit: contain;
 }
 
 #educacion .contenedor-cursos .titulo-div{
@@ -330,7 +331,7 @@ html{
 
 #portfolio .fila{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 30px 0;
     flex-wrap: wrap;
 }
@@ -571,6 +572,7 @@ footer a:hover{
         width: 30px;
         height: 30px;
         margin: 20px;
+        animation: lenguajes 8s linear infinite;
     }
     #educacion .contenedor-cursos .titulo-div{
         font-size: 25px;
